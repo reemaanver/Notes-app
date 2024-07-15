@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.navbar {
+  font-size: 18px;
+  padding-left: 30px;
+  background-color: #4e4e4e;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-links {
+  color: #d6d6d6;
+  text-decoration: none;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}

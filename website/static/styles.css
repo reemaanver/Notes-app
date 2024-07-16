@@ -81,3 +81,29 @@ body {
   background-color: #026fe4;
   cursor: pointer;
 }
+
+/* Flash mssgs */
+.flash-mssg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.error {
+  background-color: #ffcdd2;
+  color: rgb(125, 13, 13);
+}
+
+.success {
+  background-color: #b7e5b3;
+  color: rgb(2, 93, 2);
+}
+
+.close-flash {
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: inherit;
+  cursor: pointer;
+}

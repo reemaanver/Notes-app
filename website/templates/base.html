@@ -16,6 +16,19 @@
       <a class="navbar-links logout" href="/logout">Logout</a>
       <a class="navbar-links home" href="/">Home</a>
     </nav>
+    {% with messages = get_flashed_messages(with_categories=true)%} {% if
+    messages %} {% for category, mssg in messages %} {% if category == 'error'
+    %}
+    <div class="flash-mssg error">
+      <p>{{mssg}}</p>
+      <button class="close-flash">&times;</button>
+    </div>
+    {% else %}
+    <div class="flash-mssg success">
+      <p>{{mssg}}</p>
+      <button class="close-flash">&times;</button>
+    </div>
+    {% endif %} {% endfor %} {% endif %} {% endwith %}
     <div class="container">{% block content%} {% endblock %}</div>
 
     <script src="{{url_for('static', filename='index.js')}}"></script>

@@ -67,7 +67,7 @@ body {
   border-color: #007bff;
 }
 
-.submit-btn {
+.submit-lgn-btn {
   align-self: flex-start;
   border: none;
   background-color: #007bff;
@@ -77,7 +77,7 @@ body {
   font-size: 16px;
 }
 
-.submit-btn:hover {
+.submit-lgn-btn:hover {
   background-color: #026fe4;
   cursor: pointer;
 }

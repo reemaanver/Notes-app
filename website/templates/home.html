@@ -1,3 +1,18 @@
-{% extends "base.html" %} {% block content%}
-<h1>YO</h1>
-{% endblock %}
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
+<h1 class="notes">Notes</h1>
+<div class="note-container">
+  <ul class="note-list">
+    {% for note in user.notes %}
+    <li class="note-item">
+      {{note.data}}
+      <button class="dlt-note" data-id="{{note.id}}">&times;</button>
+    </li>
+    {% endfor %}
+  </ul>
+  <form class="new-note-form" method="POST">
+    <textarea name="note" id="note" class="new-note"></textarea>
+    <br />
+    <button class="note-btn btn">Add Note</button>
+  </form>
+  {% endblock %}
+</div>
